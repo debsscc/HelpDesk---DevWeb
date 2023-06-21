@@ -1,0 +1,130 @@
+/* # = id | . = classe */ 
+#Home {
+    float: right;
+}
+.row {
+    float: right;
+}
+
+#mainheadline {
+position:  absolute;
+width: 559px;
+height: 150px;
+left: 161px; 
+top: 25%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+}
+
+#sobre {
+position: absolute;
+width: 476px;
+height: 100px;
+left: 164px;
+top: 60%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+}
+
+#primary {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+table {
+    margin-top: 10%;
+    width: 80%;
+    border-collapse: collapse;
+}
+#left {
+    float: left;
+    margin-left: 5%;
+    margin-right: 50px;
+    width: 50%;
+}
+#right {
+    max-width: fit-content;
+    float: right;
+    margin-right: 5%;
+}
+#imgg {
+    size: 20%;
+    max-width: fit-content;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* A classe .clearfix à tag <tr> para limpar o float e garantir que a próxima linha comece abaixo da imagem e da div esquerda.*/
+h2 {
+    position: absolute;
+    width: 163px;
+    height: 36px;
+    left: 550px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 140%;
+}
+
+#oval {
+position: absolute;
+left: 10%;
+right: 77.78%;
+top: 26.52%;
+bottom: 69.43%;
+}
+#rec {
+    margin-top: 5%;
+}
+
+/* Página Planos */
+h4 {
+    font-size: xx-large;
+}
+h3 {
+    font-size: x-large;
+}
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.col1 {
+    grid-row: 1 / span 2; /* Aumenta a altura da primeira coluna para ocupar duas linhas */
+  }
+  
+.col2 {
+    grid-row: 1 / span 5; /* Aumenta a altura da segunda coluna para ocupar três linhas */
+  }
+  
+.col3 {
+    grid-row: 1 / span 2; /* Aumenta a altura da terceira coluna para ocupar duas linhas */
+  }
+  
+  /* Estilos adicionais para as colunas */
+.col {
+    padding: 20px;
+  }
+
