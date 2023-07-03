@@ -1,18 +1,31 @@
-/* # = id | . = classe */ 
-#Home {
-    float: right;
-}
 .row {
     float: right;
 }
+/*Página Index*/ 
+#Home {
+display: flex;
+justify-content: space-between;
+margin: 0 5rem;
+align-items: center;
+height: 60vh;
+}
 
+.right img {
+  width: 600px;
+}
+
+.left {
+  align-items:  left;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  gap: 3rem;
+}
+
+.left button {
+  width: 60%;
+}
 #mainheadline {
-position:  absolute;
-width: 559px;
-height: 150px;
-left: 161px; 
-top: 25%;
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -21,12 +34,6 @@ line-height: 110%;
 }
 
 #sobre {
-position: absolute;
-width: 476px;
-height: 100px;
-left: 164px;
-top: 60%;
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -37,31 +44,29 @@ line-height: 140%;
 #primary {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-table {
-    margin-top: 10%;
-    width: 80%;
-    border-collapse: collapse;
-}
-#left {
-    float: left;
-    margin-left: 5%;
-    margin-right: 50px;
-    width: 50%;
-}
-#right {
-    max-width: fit-content;
-    float: right;
-    margin-right: 5%;
-}
-#imgg {
-    size: 20%;
-    max-width: fit-content;
-}
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
   }
+
+@media (width <= 1100px) {
+  #Home {
+    flex-direction: column;
+  }
+  .right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .left,
+  .right {
+    width: 100%;
+    float: none;
+  }
+}
+
 /* A classe .clearfix à tag <tr> para limpar o float e garantir que a próxima linha comece abaixo da imagem e da div esquerda.*/
 h2 {
     position: absolute;
@@ -76,6 +81,7 @@ font-size: 32px;
 line-height: 140%;
 }
 
+/* Página Recursos */ 
 #oval {
 position: absolute;
 left: 10%;
@@ -86,10 +92,19 @@ bottom: 69.43%;
 #rec {
     margin-top: 5%;
 }
-/* Página Recursos */ 
 
 #Bolinhas {
   font-weight: bold;
+}
+/* Adicionando animação de zoom/zoom-out*/
+
+.bolota {
+  transition: transform .3s ease;
+  
+}
+.bolota:hover {
+  transition: transform .3s ease;
+  transform: scale(1.2);
 }
 
 /* Página Planos */
@@ -99,6 +114,10 @@ h4 {
 h3 {
     font-size: x-large;
 }
+h5 { 
+  font-size: large;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -127,7 +146,6 @@ h3 {
 .col3 {
     grid-row: 1 / span 2; /* Aumenta a altura da terceira coluna para ocupar duas linhas */
   }
-  
   /* Estilos adicionais para as colunas */
 .col {
     padding: 20px;
